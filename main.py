@@ -23,18 +23,8 @@ app.add_middleware(
 async def dashing() -> dict:
     return {
         "Dashboards": [
-            "Sales",
-            "Inventory",
-            "Procurement"
+            "Sales"
         ]
     }
 
 
-# @app.on_event("startup")
-# async def on_startup():
-#     await settings.initialize_database()
-
-
-# @app.get("/")
-# async def home():
-#     return RedirectResponse(url="/")
